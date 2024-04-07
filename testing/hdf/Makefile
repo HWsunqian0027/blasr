@@ -62,11 +62,11 @@ bin/testHDFFile: bin/TestHDFFile.o
 	$(CPP) $(CPPOPTS) $< -o $@ -L$(HDF5LIBDIR) -l$(HDF5LIBCPP) -l$(HDF5LIB)
 
 bin/testHDFRegionReader: bin/TestHDFRegionReader.o
-	$(CPP) -static $(CPPOPTS) $< -o $@ -L$(HDF5LIBDIR) -l$(HDF5LIBCPP) -l$(HDF5LIB) -lpthread -lz
+	$(CPP)  $(CPPOPTS) $< -o $@ -L$(HDF5LIBDIR) -l$(HDF5LIBCPP) -l$(HDF5LIB) -lpthread -lz
 
 bin/testCmpReader: bin/TestHDFCmpReader.o
-	$(CPP) -static $(CPPOPTS) $< -o $@ -L$(HDF5LIBDIR) -l$(HDF5LIBCPP) -l$(HDF5LIB) -lpthread -lz
+	$(CPP)  $(CPPOPTS) $< -o $@ -L$(HDF5LIBDIR) -l$(HDF5LIBCPP) -l$(HDF5LIB) -lpthread -lz
 
 
 bin/testHDFCCSReader: bin/TestHDFCCSReader.o
-	$(CPP) -static $(CPPOPTS) $< -o $@ -L$(HDF5LIBDIR) -l$(HDF5LIBCPP) -l$(HDF5LIB) -lpthread -lz
+	$(CPP)  $(CPPOPTS) $< -o $@ -L$(HDF5LIBDIR) -l$(HDF5LIBCPP) -l$(HDF5LIB) -lpthread -lz

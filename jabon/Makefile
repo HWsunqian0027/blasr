@@ -12,7 +12,7 @@ LIBS = -lboost_program_options -lpthread -L$(BUILD_DIR) -lsoap
 DEFINES = -DDB_SHORT -DREAD_36 -DMAXGAP=3 -DMAXHITS=10000
 INCLUDES = -Isrc/libsoap
 ifneq ($(shell uname -s),Darwin)
-    STATIC   = -static
+    STATIC   = 
 endif
 
 OBJS = \
